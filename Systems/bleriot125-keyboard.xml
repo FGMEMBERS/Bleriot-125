@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <key n="100">
+    <name>d</name>
+    <desc>Left door 1</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorG1.toggle();</script>
+    </binding>
+  </key>
+
+  <key n="101">
+    <name>e</name>
+    <desc>Left door 2</desc>
+    <mod-up>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorG2.toggle();</script>
+      </binding>
+    </mod-up>
+  </key>
+  
+  <key n="68">
+    <name>D</name>
+    <desc>Right door 1</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorD1.toggle();</script>
+    </binding>
+  </key>
+  
+  <key n="69">
+    <name>E</name>
+    <desc>Right door 2</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorD2.toggle();</script>
+    </binding>
+  </key>
+
+</PropertyList>

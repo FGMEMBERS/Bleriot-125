@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <fx>
+    
+    <!-- Noze engine -->
+    <crank>
+      <name>cranking</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/starter.wav</path>
+      <condition>
+        <property>/engines/engine[0]/cranking</property>
+      </condition>
+      <volume>
+        <property>/engines/engine[0]/cranking</property>
+        <offset>0.5</offset>
+      </volume>
+    </crank>
+    
+    <engine>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/waspjr.wav</path>
+      <condition>
+        <property>/engines/engine[0]/running</property>
+      </condition>
+      <volume>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <min>0.5</min>
+        <max>1.00</max>
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0004</factor>
+        <offset>0.2</offset>
+      </pitch>
+    </engine>
+      
+    <!-- Rear engine -->
+    <crank>
+      <name>cranking</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/starter.wav</path>
+      <condition>
+        <property>/engines/engine[1]/cranking</property>
+      </condition>
+      <volume>
+        <property>/engines/engine[1]/cranking</property>
+        <offset>0.5</offset>
+      </volume>
+    </crank>
+    
+    <engine>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/waspjr.wav</path>
+      <condition>
+        <property>/engines/engine[1]/running</property>
+      </condition>
+      <volume>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <min>0.5</min>
+        <max>1.00</max>
+      </volume>
+      <pitch>
+        <property>/engines/engine[1]/rpm</property>
+        <factor>0.0004</factor>
+        <offset>0.2</offset>
+      </pitch>
+    </engine>
+    
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <property>/velocities/airspeed-kt</property>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <min>0.00</min>
+        <max>0.5</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.001</factor>
+        <offset>0.5</offset>
+        <max>1.0</max>
+      </pitch>
+    </wind>
+    
+    <stall>
+      <name>stall</name>
+      <mode>looped</mode>
+      <path>Sounds/stall.wav</path>
+      <property>/sim/alarms/stall-warning</property>
+      <volume>
+        <property>/sim/alarms/stall-warning</property>
+        <max>1.0</max>
+      </volume>
+    </stall> 
+    
+    <!-- Toggle Switches -->     
+    <switch>
+      <name>click on</name>
+      <mode>once</mode>
+      <path>Aircraft/Bleriot-125/Sounds/click.wav</path>
+      <condition>
+        <property>/sim/Sounds/switch</property>
+      </condition>
+      <volume>
+        <factor>0.45</factor>
+      </volume>
+    </switch>
+    
+    <switch>
+      <name>click off</name>
+      <mode>once</mode>
+      <path>Aircraft/Bleriot-125/Sounds/click.wav</path>
+      <condition>
+        <not>
+          <property>/sim/Sounds/switch</property>
+        </not>
+      </condition>
+      <volume>
+        <factor>0.45</factor>
+      </volume>
+    </switch>
+    
+  </fx>
+  
+</PropertyList>

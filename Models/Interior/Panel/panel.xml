@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.145 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- asi -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.045 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- turn -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.375 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </model>
+
+  <!-- rpm -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.459 </y-m>
+      <z-m> -0.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- compass -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m> -0.110 </z-m>
+    </offsets>
+  </model>
+
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.145 </y-m>
+      <z-m> -0.091 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
