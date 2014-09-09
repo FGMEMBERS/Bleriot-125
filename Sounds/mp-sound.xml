@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ 
+<PropertyList>
+
+  <fx>
+
+    <!-- External Sounds -->
+    <engine>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/waspjr.wav</path>
+      <condition>
+        <property>/engines/engine[0]/running</property>
+      </condition>
+      <volume>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <min>0.5</min>
+        <max>1.00</max>
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0004</factor>
+        <offset>0.2</offset>
+      </pitch>
+    </engine>
+    
+    <engine>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Aircraft/Bleriot-125/Sounds/waspjr.wav</path>
+      <condition>
+        <property>/engines/engine[1]/running</property>
+      </condition>
+      <volume>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <min>0.5</min>
+        <max>1.00</max>
+      </volume>
+      <pitch>
+        <property>/engines/engine[1]/rpm</property>
+        <factor>0.0004</factor>
+        <offset>0.2</offset>
+      </pitch>
+    </engine>
+    
+  </fx>
+ 
+</PropertyList>

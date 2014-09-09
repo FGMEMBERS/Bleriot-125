@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>planchet</object-name>
+    <object-name>inttourvitres</object-name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intporteG1</object-name>
+    <object-name>intporteG2</object-name>
+    <object-name>intporteD1</object-name>
+    <object-name>intporteD2</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Bleriot-125/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
+  </effect>
+  
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.250 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m>  1.200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Bleriot-125/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.53143 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  1.32915 </z-m>
+    </offsets>
+  </model>
+
+  <!-- IntDoors -->
+  <animation>
+    <name>IntPorteGauche</name>
+    <object-name>intporteG1</object-name>
+    <object-name>intvitreporteG</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorG1.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteGauche</object-name>
+    <property>sim/model/door-positions/doorG1/position-norm</property>
+    <factor> -175 </factor>
+    <center>
+      <x-m> -2.67749 </x-m>
+      <y-m> -3.46015 </y-m>
+      <z-m> -0.56953 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntPorteDroite</name>
+    <object-name>intporteD1</object-name>
+    <object-name>intvitreporteD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorD1.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteDroite</object-name>
+    <property>sim/model/door-positions/doorD1/position-norm</property>
+    <factor> 175 </factor>
+    <center>
+      <x-m> -2.67749 </x-m>
+      <y-m>  3.46015 </y-m>
+      <z-m> -0.56953 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>IntPorteGauche2</name>
+    <object-name>intporteG2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorG2.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteGauche2</object-name>
+    <property>sim/model/door-positions/doorG2/position-norm</property>
+    <factor> -175 </factor>
+    <center>
+      <x-m> -1.25530 </x-m>
+      <y-m> -3.46015 </y-m>
+      <z-m> -0.42267 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>IntPorteDroite2</name>
+    <object-name>intporteD2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteDroite2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorD2.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteDroite2</object-name>
+    <property>sim/model/door-positions/doorD2/position-norm</property>
+    <factor> 175 </factor>
+    <center>
+      <x-m> -1.25530 </x-m>
+      <y-m>  3.46015 </y-m>
+      <z-m> -0.42267 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Bleriot 125</title>
+  <key>
+    <name>d</name>
+    <desc>Open/Close left door 1</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Open/Close left door 2</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close right door 1</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Open/Close right door 2</desc>
+  </key>
+
+</PropertyList>
