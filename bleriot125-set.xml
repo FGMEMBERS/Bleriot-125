@@ -16,6 +16,17 @@
       <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>transport</tag>
+      <tag>bleriot</tag>
+      <tag>1930s</tag>
+      <tag>experimental</tag>
+      <tag>prototype</tag>
+      <tag>propeller</tag>
+      <tag>piston</tag>
+      <tag>twin-engine</tag>
+    </tags>
+
   </sim>
 
 </PropertyList>
